@@ -1,4 +1,4 @@
-hanimecheck (nshepperd@gmail.com)
+hanimecheck
 ===========
 A crappy Haskell port of [taufix's crc checker](http://agafix.org/anime-crc32-checksum-in-linux-v20/).
 
