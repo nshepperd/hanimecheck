@@ -1,1 +1,1 @@
-: checkfile.hs |> ghc --make checkfile.hs -o check |> check checkfile.hi checkfile.o
+: main.hs |> ghc --make main.hs -o hanimecheck |> hanimecheck main.hi main.o
