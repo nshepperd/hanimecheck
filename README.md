@@ -1,10 +1,10 @@
-hanimecheck (nshepperd@gmail.com
+hanimecheck (nshepperd@gmail.com)
 ===========
 A crappy Haskell port of [taufix's crc checker](http://agafix.org/anime-crc32-checksum-in-linux-v20/).
 
 Installation
 ------------
-The build system is [tup](http://gittup.org/tup/) and we depend on haskell-regex-posix and haskell-digest, so you need to install those first somehow. Then:
+The build system is [tup](http://gittup.org/tup/) and we depend on `haskell-regex-posix` and `haskell-digest`, so you need to install those first somehow. Then:
 
     tup init
     tup upd
