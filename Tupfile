@@ -1,0 +1,1 @@
+: checkfile.hs |> ghc --make checkfile.hs -o check |> check
