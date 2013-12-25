@@ -23,11 +23,12 @@ contentscrc :: String -> IO Word32
 contentscrc fname = do
   file <- openBinaryFile fname ReadMode
   dat <- L.hGetContents file
-  -- The file will be once the CRC is calculated
+  -- The file will be fully read once the CRC is calculated
   -- causing hGetContents to encounter EOF
   return (crc32 dat)
 
 -- Try to extract the required CRC from the filename
+-- Partitions the string into (Left, CRC, Right)
 extractcrc :: String -> Maybe (String, String, String)
 extractcrc fname = if not (null matchlist) then
                        Just (prefix, suffix, head matchlist)
