@@ -1,1 +1,2 @@
-: main.hs |> ghc --make main.hs -o hanimecheck |> hanimecheck main.hi main.o
+: main.hs |> ghc --make main.hs -o hanimecheck ; rm -f main.hi main.o |> hanimecheck
+.gitignore
